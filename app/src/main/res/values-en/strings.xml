@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ScanTool</string>
+    <string name="TextRestart">Reboot Device</string>
+    <string name="TextClear">Clear</string>
+    <string name="TextChkDev">Check Device</string>
+    <string name="TextDecode">Scan</string>
+    <string name="TextGetInfo">Get Device Info</string>
+    <string name="TextOpen">Open Device</string>
+    <string name="TextClose">Close Device</string>
+    <string name="TextGetCfg">Get Config</string>
+    <string name="TextGetImg">Get Image</string>
+    <string name="TextUpdate">FW Upgrade</string>
+    <string name="TextSerialName">Serial Name：</string>
+    <string name="TextSerailBaud">Baud：</string>
+    <string name="TextSwitchClose">Off</string>
+    <string name="TextSwitchOpen">On</string>
+    <string name="TextConfigErr">Config Err</string>
+    <string name="TextUnityCommand">Command:</string>
+    <string name="common_save_success">Save Success</string>
+    <string name="TextGetImgFail">Get Image Failed</string>
+    <string name="TextCreateBmpPathFail">Create Bmp Path Failed</string>
+    <string name="TextDelBmpFail">Delete Same Bmp Image Failed</string>
+    <string name="TextSenseMode">Sense Mode</string>
+    <string name="RereadTimeout">Reread Timeout</string>
+    <string name="RereadTimeoutSwitch">Reread Timeout Switch</string>
+    <string name="RereadTimeoutReset">Reread Timeout Reset</string>
+    <string name="DisableRead">Disable Scan</string>
+    <string name="GoodReadDelay">Good Read Delay</string>
+    <string name="EnableRead">Enable Scan</string>
+    <string name="ContinueMode">Continue Mode</string>
+    <string name="GoodReadDelaySwitch">Good Read Delay Switch</string>
+    <string name="Prefix">Prefix</string>
+    <string name="PrefixHint">PrefixHint</string>
+    <string name="CustomPrefixSwitch">Custom Prefix Switch</string>
+    <string name="TerminatingCharacterSuffix">Terminating Character Suffix</string>
+    <string name="HintLength2">00-FF Length:2</string>
+    <string name="TextQueryCommand" >Query Command</string>
+    <string name="SelectFile" >Select File</string>
+    <string name="TextInfoPlugin" >Plug in device</string>
+    <string name="TextInfoPlugout" >Plug out device</string>
+    <string name="TextInfoUpdate" >FW Upgrade</string>
+    <string name="TextUpdateConfig" >Config Update</string>
+    <string name="TextInfoUpdating" >Updating......</string>
+
+</resources>

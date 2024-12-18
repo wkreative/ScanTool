@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ScanTool</string>
+    <string name="TextRestart">重启设备</string>
+    <string name="TextClear">清空显示</string>
+    <string name="TextChkDev">检查设备</string>
+    <string name="TextDecode">识读条码</string>
+    <string name="TextGetInfo">获取设备信息</string>
+    <string name="TextOpen">打开设备</string>
+    <string name="TextClose">关闭设备</string>
+    <string name="TextGetCfg">查询配置</string>
+    <string name="TextGetImg">获取图像</string>
+    <string name="TextUpdate">更新固件</string>
+    <string name="TextSerialName">串口设备：</string>
+    <string name="TextSerailBaud">波特率：</string>
+    <string name="TextSwitchClose">关闭</string>
+    <string name="TextSwitchOpen">开启</string>
+    <string name="TextConfigErr">配置错误</string>
+    <string name="TextUnityCommand">命令:</string>
+    <string name="common_save_success">保存成功</string>
+    <string name="TextGetImgFail">取图失败</string>
+    <string name="TextCreateBmpPathFail">创建文件目录失败</string>
+    <string name="TextDelBmpFail">删除相同文件失败</string>
+    <string name="TextSenseMode">感应模式</string>
+    <string name="RereadTimeout">延时时间</string>
+    <string name="RereadTimeoutSwitch" >重读延时</string>
+    <string name="RereadTimeoutReset" >延时复位</string>
+    <string name="DisableRead" >禁止识读</string>
+    <string name="GoodReadDelay" >成功读码延时</string>
+    <string name="EnableRead" >使能识读</string>
+    <string name="ContinueMode" >连续识读</string>
+    <string name="GoodReadDelaySwitch" >成功延时</string>
+    <string name="Prefix" >前缀</string>
+    <string name="PrefixHint" >前缀</string>
+    <string name="CustomPrefixSwitch" >自定义前缀</string>
+    <string name="TerminatingCharacterSuffix">结束符后缀</string>
+    <string name="HintLength2">长度2</string>
+    <string name="TextQueryCommand" >查询命令</string>
+    <string name="SelectFile" >选择文件</string>
+    <string name="TextInfoPlugin" >设备插入</string>
+    <string name="TextInfoPlugout" >设备拔出</string>
+    <string name="TextInfoUpdate" >更新固件</string>
+    <string name="TextUpdateConfig" >更新配置</string>
+    <string name="TextInfoUpdating" >更新中...</string>
+
+
+</resources>
