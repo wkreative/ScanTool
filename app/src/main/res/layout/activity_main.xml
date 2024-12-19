@@ -1,46 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/bnOpenDevice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Device"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <Button
+            android:id="@+id/bnOpenDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextOpen" />
+
+        <Spinner
+            android:id="@+id/spCommtype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/comm_type" />
+
+        <Button
+            android:id="@+id/bnScanEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EnableRead" />
+
+        <Button
+            android:id="@+id/bnRestartDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextRestart" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <Button
+            android:id="@+id/bnScanBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextDecode" />
+
+        <Button
+            android:id="@+id/bnClearResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextClear" />
+
+        <Button
+            android:id="@+id/bnGetDeviceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextGetInfo" />
+
+        <Button
+            android:id="@+id/bnSenseMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextSenseMode" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextSerialName" />
+
+        <EditText
+            android:id="@+id/editSerialname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:text="/dev/ttyMT1"
+            android:singleLine="true"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextSerailBaud" />
+
+        <EditText
+            android:id="@+id/editBaud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:digits="0123456789"
+            android:text="9600"
+            android:inputType="number"
+            android:singleLine="true"
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="TextUnityCommand" />
+
+        <EditText
+            android:id="@+id/editConfig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:autofillHints="TextQueryCommand"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top"
+            android:inputType="text"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/bnQueCfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextGetCfg" />
+
+        <Button
+            android:id="@+id/bnGetImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextGetImg" />
+
+    </TableRow>
 
     <EditText
-        android:id="@+id/editSerialname"
+        android:id="@+id/etResult"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Serial Name"
-        android:layout_below="@id/bnOpenDevice"
-        android:layout_marginTop="16dp"
-        android:enabled="false"/>
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/edit_text"
+        android:gravity="top"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
 
-    <EditText
-        android:id="@+id/editBaud"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Baud Rate"
-        android:layout_below="@id/editSerialname"
-        android:layout_marginTop="16dp"
-        android:enabled="false"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textss"
-        android:layout_below="@id/editBaud"
-        android:layout_marginTop="16dp"
-/>
-    <Spinner
-        android:id="@+id/spCommtype"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textss"
-        android:layout_marginTop="16dp"/>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txtFilePath"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:autofillHints="SelectFile"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top"
+            android:inputType="text"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/bnUpdateFirmware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextUpdate" />
+        <Button
+            android:id="@+id/bnUpdateConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextUpdateConfig" />
+    </TableRow>
+    <ProgressBar
+        android:id="@+id/pbUpdate"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+</TableLayout>
